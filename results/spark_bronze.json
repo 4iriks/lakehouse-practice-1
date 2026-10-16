@@ -1,0 +1,161 @@
+{
+  "customer": {
+    "count": 150000,
+    "schema": {
+      "type": "struct",
+      "fields": [
+        {
+          "name": "custkey",
+          "type": "long",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "nullable": true,
+          "metadata": {}
+        }
+      ]
+    },
+    "sample": [
+      {
+        "custkey": 112501,
+        "name": "Customer#000112501"
+      },
+      {
+        "custkey": 112502,
+        "name": "Customer#000112502"
+      },
+      {
+        "custkey": 112503,
+        "name": "Customer#000112503"
+      },
+      {
+        "custkey": 112504,
+        "name": "Customer#000112504"
+      },
+      {
+        "custkey": 112505,
+        "name": "Customer#000112505"
+      }
+    ]
+  },
+  "orders": {
+    "count": 1500000,
+    "schema": {
+      "type": "struct",
+      "fields": [
+        {
+          "name": "orderkey",
+          "type": "long",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "custkey",
+          "type": "long",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "orderdate",
+          "type": "date",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "totalprice",
+          "type": "double",
+          "nullable": true,
+          "metadata": {}
+        }
+      ]
+    },
+    "sample": [
+      {
+        "orderkey": 3000001,
+        "custkey": 145618,
+        "orderdate": "1992-12-17",
+        "totalprice": 30175.88
+      },
+      {
+        "orderkey": 3000002,
+        "custkey": 1481,
+        "orderdate": "1995-07-28",
+        "totalprice": 297999.63
+      },
+      {
+        "orderkey": 3000003,
+        "custkey": 127432,
+        "orderdate": "1997-11-04",
+        "totalprice": 345438.38
+      },
+      {
+        "orderkey": 3000004,
+        "custkey": 47423,
+        "orderdate": "1996-06-13",
+        "totalprice": 135965.53
+      },
+      {
+        "orderkey": 3000005,
+        "custkey": 84973,
+        "orderdate": "1992-09-12",
+        "totalprice": 209937.09
+      }
+    ]
+  },
+  "lineitem": {
+    "count": 6001215,
+    "schema": {
+      "type": "struct",
+      "fields": [
+        {
+          "name": "orderkey",
+          "type": "long",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "linenumber",
+          "type": "integer",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "quantity",
+          "type": "double",
+          "nullable": true,
+          "metadata": {}
+        }
+      ]
+    },
+    "sample": [
+      {
+        "orderkey": 1,
+        "linenumber": 1,
+        "quantity": 17.0
+      },
+      {
+        "orderkey": 1,
+        "linenumber": 2,
+        "quantity": 36.0
+      },
+      {
+        "orderkey": 1,
+        "linenumber": 3,
+        "quantity": 8.0
+      },
+      {
+        "orderkey": 1,
+        "linenumber": 4,
+        "quantity": 28.0
+      },
+      {
+        "orderkey": 1,
+        "linenumber": 5,
+        "quantity": 24.0
+      }
+    ]
+  }
+}

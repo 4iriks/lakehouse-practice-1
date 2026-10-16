@@ -1,0 +1,9 @@
+{
+  "bucket": "warehouse",
+  "objects": 275,
+  "total_bytes": 139113741,
+  "active_data_bytes": 137768755,
+  "retained_data_bytes_current_tables": 1191,
+  "metadata_bytes_current_tables": 1342248,
+  "other_bytes_including_dropped_trials": 1547
+}

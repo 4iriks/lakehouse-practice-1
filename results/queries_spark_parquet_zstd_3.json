@@ -1,0 +1,54 @@
+[
+  {
+    "engine": "Spark",
+    "variant": "parquet_zstd",
+    "series": 3,
+    "run": 0,
+    "state": "first",
+    "elapsed_s": 15.879640806000225,
+    "correct": true,
+    "rows": 57,
+    "started_at": "2026-10-16T19:14:14+00:00",
+    "spark_version": "3.5.6",
+    "application_id": "local-1792178053490"
+  },
+  {
+    "engine": "Spark",
+    "variant": "parquet_zstd",
+    "series": 3,
+    "run": 1,
+    "state": "repeat",
+    "elapsed_s": 3.7759513400001197,
+    "correct": true,
+    "rows": 57,
+    "started_at": "2026-10-16T19:14:29+00:00",
+    "spark_version": "3.5.6",
+    "application_id": "local-1792178053490"
+  },
+  {
+    "engine": "Spark",
+    "variant": "parquet_zstd",
+    "series": 3,
+    "run": 2,
+    "state": "repeat",
+    "elapsed_s": 3.460413150000022,
+    "correct": true,
+    "rows": 57,
+    "started_at": "2026-10-16T19:14:33+00:00",
+    "spark_version": "3.5.6",
+    "application_id": "local-1792178053490"
+  },
+  {
+    "engine": "Spark",
+    "variant": "parquet_zstd",
+    "series": 3,
+    "run": 3,
+    "state": "repeat",
+    "elapsed_s": 3.2743183870002213,
+    "correct": true,
+    "rows": 57,
+    "started_at": "2026-10-16T19:14:36+00:00",
+    "spark_version": "3.5.6",
+    "application_id": "local-1792178053490"
+  }
+]

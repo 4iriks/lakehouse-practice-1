@@ -1,0 +1,54 @@
+[
+  {
+    "engine": "Spark",
+    "variant": "orc_zstd",
+    "series": 2,
+    "run": 0,
+    "state": "first",
+    "elapsed_s": 15.770181247999972,
+    "correct": true,
+    "rows": 57,
+    "started_at": "2026-10-16T19:11:19+00:00",
+    "spark_version": "3.5.6",
+    "application_id": "local-1792177878462"
+  },
+  {
+    "engine": "Spark",
+    "variant": "orc_zstd",
+    "series": 2,
+    "run": 1,
+    "state": "repeat",
+    "elapsed_s": 5.977714451999873,
+    "correct": true,
+    "rows": 57,
+    "started_at": "2026-10-16T19:11:34+00:00",
+    "spark_version": "3.5.6",
+    "application_id": "local-1792177878462"
+  },
+  {
+    "engine": "Spark",
+    "variant": "orc_zstd",
+    "series": 2,
+    "run": 2,
+    "state": "repeat",
+    "elapsed_s": 4.8150948689999495,
+    "correct": true,
+    "rows": 57,
+    "started_at": "2026-10-16T19:11:40+00:00",
+    "spark_version": "3.5.6",
+    "application_id": "local-1792177878462"
+  },
+  {
+    "engine": "Spark",
+    "variant": "orc_zstd",
+    "series": 2,
+    "run": 3,
+    "state": "repeat",
+    "elapsed_s": 4.519655395999962,
+    "correct": true,
+    "rows": 57,
+    "started_at": "2026-10-16T19:11:45+00:00",
+    "spark_version": "3.5.6",
+    "application_id": "local-1792177878462"
+  }
+]

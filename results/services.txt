@@ -1,0 +1,6 @@
+NAME                                IMAGE                                   COMMAND                  SERVICE      CREATED          STATUS                      PORTS
+lakehouse-practice-1-lakekeeper-1   quay.io/lakekeeper/catalog:v0.9.5       "/home/nonroot/lakek…"   lakekeeper   24 minutes ago   Up 24 minutes (healthy)     127.0.0.1:8181->8181/tcp
+lakehouse-practice-1-migrate-1      quay.io/lakekeeper/catalog:v0.9.5       "/home/nonroot/lakek…"   migrate      37 minutes ago   Exited (0) 24 minutes ago
+lakehouse-practice-1-minio-1        lakehouse-practice-1-minio:2025-09-07   "minio server /data …"   minio        24 minutes ago   Up 24 minutes (healthy)     127.0.0.1:9000-9001->9000-9001/tcp
+lakehouse-practice-1-postgres-1     postgres:16.10-bookworm                 "docker-entrypoint.s…"   postgres     37 minutes ago   Up 37 minutes (healthy)     5432/tcp
+lakehouse-practice-1-trino-1        trinodb/trino:476                       "/usr/lib/trino/bin/…"   trino        28 minutes ago   Up 3 minutes (healthy)      127.0.0.1:8080->8080/tcp

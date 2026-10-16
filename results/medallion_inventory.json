@@ -1,0 +1,71 @@
+[
+  {
+    "schema": "silver",
+    "table": "order_quantities",
+    "rows": 57,
+    "active_data_bytes": 782,
+    "metadata_bytes": 14500,
+    "retained_data_bytes": 0,
+    "data_files": 1,
+    "metadata_files": 5,
+    "files": [
+      [
+        "s3://warehouse/01a14612-ac8a-70f1-b016-511651feb41b/order_quantities-60f5851f43114b51b98088855683a249/data/20261016_185644_00144_i48p6-b68d0cc5-a754-4ef9-b03f-1ec0be4886da.parquet",
+        782,
+        57,
+        "PARQUET"
+      ]
+    ],
+    "ddl": "CREATE TABLE lake.silver.order_quantities (\n   orderkey bigint,\n   total_quantity decimal(18, 2)\n)\nWITH (\n   format = 'PARQUET',\n   format_version = 2,\n   location = 's3://warehouse/01a14612-ac8a-70f1-b016-511651feb41b/order_quantities-60f5851f43114b51b98088855683a249',\n   max_commit_retry = 4\n)",
+    "physical_codecs": [
+      "ZSTD"
+    ],
+    "embedded_footer_bytes": 313
+  },
+  {
+    "schema": "silver",
+    "table": "large_orders",
+    "rows": 57,
+    "active_data_bytes": 2235,
+    "metadata_bytes": 17611,
+    "retained_data_bytes": 0,
+    "data_files": 1,
+    "metadata_files": 5,
+    "files": [
+      [
+        "s3://warehouse/01a14612-ac8a-70f1-b016-511651feb41b/large_orders-714fcdb2749a4b24b0748da804107b97/data/20261016_185645_00145_i48p6-f11db7e9-ac0e-4391-86a4-05124a339fc0.parquet",
+        2235,
+        57,
+        "PARQUET"
+      ]
+    ],
+    "ddl": "CREATE TABLE lake.silver.large_orders (\n   name varchar,\n   custkey bigint,\n   orderkey bigint,\n   orderdate date,\n   totalprice decimal(15, 2),\n   total_quantity decimal(18, 2)\n)\nWITH (\n   format = 'PARQUET',\n   format_version = 2,\n   location = 's3://warehouse/01a14612-ac8a-70f1-b016-511651feb41b/large_orders-714fcdb2749a4b24b0748da804107b97',\n   max_commit_retry = 4\n)",
+    "physical_codecs": [
+      "ZSTD"
+    ],
+    "embedded_footer_bytes": 731
+  },
+  {
+    "schema": "gold",
+    "table": "q18",
+    "rows": 57,
+    "active_data_bytes": 2246,
+    "metadata_bytes": 17585,
+    "retained_data_bytes": 0,
+    "data_files": 1,
+    "metadata_files": 5,
+    "files": [
+      [
+        "s3://warehouse/01a14612-acb6-7853-8430-a3a30efaf9ca/q18-0e6663ebdfe64847857090eb0b71964a/data/20261016_185645_00146_i48p6-4e86acf3-1758-4f28-aacf-cb021125e5d9.parquet",
+        2246,
+        57,
+        "PARQUET"
+      ]
+    ],
+    "ddl": "CREATE TABLE lake.gold.q18 (\n   name varchar,\n   custkey bigint,\n   orderkey bigint,\n   orderdate date,\n   totalprice decimal(15, 2),\n   total_quantity decimal(18, 2)\n)\nWITH (\n   format = 'PARQUET',\n   format_version = 2,\n   location = 's3://warehouse/01a14612-acb6-7853-8430-a3a30efaf9ca/q18-0e6663ebdfe64847857090eb0b71964a',\n   max_commit_retry = 4\n)",
+    "physical_codecs": [
+      "ZSTD"
+    ],
+    "embedded_footer_bytes": 731
+  }
+]

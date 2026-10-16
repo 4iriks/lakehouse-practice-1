@@ -1,0 +1,70 @@
+{
+  "table": "lake.silver.evolution_demo",
+  "count_before": 57,
+  "count_after_delete": 56,
+  "count_after_restore": 57,
+  "snapshot_id": 662398616079528782,
+  "deleted_orderkey": 4439686,
+  "data_files_unchanged_by_schema_evolution": true,
+  "time_travel_matches": true,
+  "schema_evolution_data_matches": true,
+  "restored_matches": true,
+  "columns": [
+    [
+      "name",
+      "varchar",
+      "",
+      ""
+    ],
+    [
+      "custkey",
+      "bigint",
+      "",
+      ""
+    ],
+    [
+      "orderkey",
+      "bigint",
+      "",
+      ""
+    ],
+    [
+      "orderdate",
+      "date",
+      "",
+      ""
+    ],
+    [
+      "totalprice",
+      "decimal(15,2)",
+      "",
+      ""
+    ],
+    [
+      "total_quantity",
+      "decimal(18,2)",
+      "",
+      ""
+    ],
+    [
+      "etl_note",
+      "varchar",
+      "",
+      ""
+    ]
+  ],
+  "snapshots": [
+    [
+      "2026-10-16 19:07:14.931 UTC",
+      2110276184000460784,
+      662398616079528782,
+      "delete"
+    ],
+    [
+      "2026-10-16 19:07:13.424 UTC",
+      662398616079528782,
+      null,
+      "append"
+    ]
+  ]
+}

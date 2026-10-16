@@ -1,0 +1,62 @@
+[
+  {
+    "Id": "sha256:50110807335e1aadb1b100c3c61fae317761496c26129ffcd680831f3acbdaa5",
+    "RepoTags": [
+      "postgres:16.10-bookworm"
+    ],
+    "RepoDigests": [
+      "postgres@sha256:50110807335e1aadb1b100c3c61fae317761496c26129ffcd680831f3acbdaa5"
+    ],
+    "Created": "2025-11-04T00:26:16.609398387Z",
+    "Architecture": "amd64",
+    "Os": "linux"
+  },
+  {
+    "Id": "sha256:dd5ab77d3feb8121544cc7472f91e025dff3c7f3d72240df4e945e99c5ab237e",
+    "RepoTags": [
+      "quay.io/lakekeeper/catalog:v0.9.5"
+    ],
+    "RepoDigests": [
+      "quay.io/lakekeeper/catalog@sha256:dd5ab77d3feb8121544cc7472f91e025dff3c7f3d72240df4e945e99c5ab237e"
+    ],
+    "Created": "2025-08-14T15:21:59.078129194Z",
+    "Architecture": "amd64",
+    "Os": "linux"
+  },
+  {
+    "Id": "sha256:a6262ce8cb9b293cd57181e19817096eec27b23cfdb2fcd3a4172bdd26fd825a",
+    "RepoTags": [
+      "trinodb/trino:476"
+    ],
+    "RepoDigests": [
+      "trinodb/trino@sha256:a6262ce8cb9b293cd57181e19817096eec27b23cfdb2fcd3a4172bdd26fd825a"
+    ],
+    "Created": "2025-06-06T04:30:01.989610007Z",
+    "Architecture": "amd64",
+    "Os": "linux"
+  },
+  {
+    "Id": "sha256:4a4d911e229124fd300ffa533294a6711666284255f7858e6fbe7393355cff4a",
+    "RepoTags": [
+      "apache/spark:3.5.6"
+    ],
+    "RepoDigests": [
+      "apache/spark@sha256:4a4d911e229124fd300ffa533294a6711666284255f7858e6fbe7393355cff4a"
+    ],
+    "Created": "2025-05-28T20:29:51.018188514Z",
+    "Architecture": "amd64",
+    "Os": "linux"
+  },
+  {
+    "Id": "sha256:99e68dcdb4aba1dfd1a3ba096ea909f5f427b61ab3c7b30d242794b4ffa7c22d",
+    "RepoTags": [
+      "lakehouse-practice-1-minio:2025-09-07"
+    ],
+    "RepoDigests": [
+      "lakehouse-practice-1-minio@sha256:99e68dcdb4aba1dfd1a3ba096ea909f5f427b61ab3c7b30d242794b4ffa7c22d"
+    ],
+    "Created": "2026-10-16T18:52:05.987247349Z",
+    "Architecture": "amd64",
+    "Os": "linux"
+  }
+]

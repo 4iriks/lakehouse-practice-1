@@ -1,0 +1,54 @@
+[
+  {
+    "engine": "Spark",
+    "variant": "parquet_gzip",
+    "series": 2,
+    "run": 0,
+    "state": "first",
+    "elapsed_s": 15.987821140000051,
+    "correct": true,
+    "rows": 57,
+    "started_at": "2026-10-16T19:11:56+00:00",
+    "spark_version": "3.5.6",
+    "application_id": "local-1792177915550"
+  },
+  {
+    "engine": "Spark",
+    "variant": "parquet_gzip",
+    "series": 2,
+    "run": 1,
+    "state": "repeat",
+    "elapsed_s": 3.891071446999831,
+    "correct": true,
+    "rows": 57,
+    "started_at": "2026-10-16T19:12:11+00:00",
+    "spark_version": "3.5.6",
+    "application_id": "local-1792177915550"
+  },
+  {
+    "engine": "Spark",
+    "variant": "parquet_gzip",
+    "series": 2,
+    "run": 2,
+    "state": "repeat",
+    "elapsed_s": 3.3406409879999046,
+    "correct": true,
+    "rows": 57,
+    "started_at": "2026-10-16T19:12:15+00:00",
+    "spark_version": "3.5.6",
+    "application_id": "local-1792177915550"
+  },
+  {
+    "engine": "Spark",
+    "variant": "parquet_gzip",
+    "series": 2,
+    "run": 3,
+    "state": "repeat",
+    "elapsed_s": 3.198975270000119,
+    "correct": true,
+    "rows": 57,
+    "started_at": "2026-10-16T19:12:18+00:00",
+    "spark_version": "3.5.6",
+    "application_id": "local-1792177915550"
+  }
+]

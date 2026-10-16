@@ -1,0 +1,512 @@
+[
+  {
+    "variant": "parquet_gzip",
+    "table": "customer",
+    "rows": 150000,
+    "checksum": "647B17AF6B429209",
+    "source_checksum": "647B17AF6B429209",
+    "matches": true,
+    "types_match": true,
+    "source_types": {
+      "custkey": "bigint",
+      "name": "varchar"
+    },
+    "columns": [
+      [
+        "custkey",
+        "bigint",
+        "",
+        ""
+      ],
+      [
+        "name",
+        "varchar",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "variant": "parquet_zstd",
+    "table": "customer",
+    "rows": 150000,
+    "checksum": "647B17AF6B429209",
+    "source_checksum": "647B17AF6B429209",
+    "matches": true,
+    "types_match": true,
+    "source_types": {
+      "custkey": "bigint",
+      "name": "varchar"
+    },
+    "columns": [
+      [
+        "custkey",
+        "bigint",
+        "",
+        ""
+      ],
+      [
+        "name",
+        "varchar",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "variant": "orc_snappy",
+    "table": "customer",
+    "rows": 150000,
+    "checksum": "647B17AF6B429209",
+    "source_checksum": "647B17AF6B429209",
+    "matches": true,
+    "types_match": true,
+    "source_types": {
+      "custkey": "bigint",
+      "name": "varchar"
+    },
+    "columns": [
+      [
+        "custkey",
+        "bigint",
+        "",
+        ""
+      ],
+      [
+        "name",
+        "varchar",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "variant": "orc_zstd",
+    "table": "customer",
+    "rows": 150000,
+    "checksum": "647B17AF6B429209",
+    "source_checksum": "647B17AF6B429209",
+    "matches": true,
+    "types_match": true,
+    "source_types": {
+      "custkey": "bigint",
+      "name": "varchar"
+    },
+    "columns": [
+      [
+        "custkey",
+        "bigint",
+        "",
+        ""
+      ],
+      [
+        "name",
+        "varchar",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "variant": "smallfiles",
+    "table": "customer",
+    "rows": 150000,
+    "checksum": "647B17AF6B429209",
+    "source_checksum": "647B17AF6B429209",
+    "matches": true,
+    "types_match": true,
+    "source_types": {
+      "custkey": "bigint",
+      "name": "varchar"
+    },
+    "columns": [
+      [
+        "custkey",
+        "bigint",
+        "",
+        ""
+      ],
+      [
+        "name",
+        "varchar",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "variant": "parquet_gzip",
+    "table": "orders",
+    "rows": 1500000,
+    "checksum": "6CBE7495EF293755",
+    "source_checksum": "6CBE7495EF293755",
+    "matches": true,
+    "types_match": true,
+    "source_types": {
+      "orderkey": "bigint",
+      "custkey": "bigint",
+      "totalprice": "double",
+      "orderdate": "date"
+    },
+    "columns": [
+      [
+        "orderkey",
+        "bigint",
+        "",
+        ""
+      ],
+      [
+        "custkey",
+        "bigint",
+        "",
+        ""
+      ],
+      [
+        "orderdate",
+        "date",
+        "",
+        ""
+      ],
+      [
+        "totalprice",
+        "double",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "variant": "parquet_zstd",
+    "table": "orders",
+    "rows": 1500000,
+    "checksum": "6CBE7495EF293755",
+    "source_checksum": "6CBE7495EF293755",
+    "matches": true,
+    "types_match": true,
+    "source_types": {
+      "orderkey": "bigint",
+      "custkey": "bigint",
+      "totalprice": "double",
+      "orderdate": "date"
+    },
+    "columns": [
+      [
+        "orderkey",
+        "bigint",
+        "",
+        ""
+      ],
+      [
+        "custkey",
+        "bigint",
+        "",
+        ""
+      ],
+      [
+        "orderdate",
+        "date",
+        "",
+        ""
+      ],
+      [
+        "totalprice",
+        "double",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "variant": "orc_snappy",
+    "table": "orders",
+    "rows": 1500000,
+    "checksum": "6CBE7495EF293755",
+    "source_checksum": "6CBE7495EF293755",
+    "matches": true,
+    "types_match": true,
+    "source_types": {
+      "orderkey": "bigint",
+      "custkey": "bigint",
+      "totalprice": "double",
+      "orderdate": "date"
+    },
+    "columns": [
+      [
+        "orderkey",
+        "bigint",
+        "",
+        ""
+      ],
+      [
+        "custkey",
+        "bigint",
+        "",
+        ""
+      ],
+      [
+        "orderdate",
+        "date",
+        "",
+        ""
+      ],
+      [
+        "totalprice",
+        "double",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "variant": "orc_zstd",
+    "table": "orders",
+    "rows": 1500000,
+    "checksum": "6CBE7495EF293755",
+    "source_checksum": "6CBE7495EF293755",
+    "matches": true,
+    "types_match": true,
+    "source_types": {
+      "orderkey": "bigint",
+      "custkey": "bigint",
+      "totalprice": "double",
+      "orderdate": "date"
+    },
+    "columns": [
+      [
+        "orderkey",
+        "bigint",
+        "",
+        ""
+      ],
+      [
+        "custkey",
+        "bigint",
+        "",
+        ""
+      ],
+      [
+        "orderdate",
+        "date",
+        "",
+        ""
+      ],
+      [
+        "totalprice",
+        "double",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "variant": "smallfiles",
+    "table": "orders",
+    "rows": 1500000,
+    "checksum": "6CBE7495EF293755",
+    "source_checksum": "6CBE7495EF293755",
+    "matches": true,
+    "types_match": true,
+    "source_types": {
+      "orderkey": "bigint",
+      "custkey": "bigint",
+      "totalprice": "double",
+      "orderdate": "date"
+    },
+    "columns": [
+      [
+        "orderkey",
+        "bigint",
+        "",
+        ""
+      ],
+      [
+        "custkey",
+        "bigint",
+        "",
+        ""
+      ],
+      [
+        "orderdate",
+        "date",
+        "",
+        ""
+      ],
+      [
+        "totalprice",
+        "double",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "variant": "parquet_gzip",
+    "table": "lineitem",
+    "rows": 6001215,
+    "checksum": "DA7261A1F4D7C061",
+    "source_checksum": "DA7261A1F4D7C061",
+    "matches": true,
+    "types_match": true,
+    "source_types": {
+      "orderkey": "bigint",
+      "linenumber": "integer",
+      "quantity": "double"
+    },
+    "columns": [
+      [
+        "orderkey",
+        "bigint",
+        "",
+        ""
+      ],
+      [
+        "linenumber",
+        "integer",
+        "",
+        ""
+      ],
+      [
+        "quantity",
+        "double",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "variant": "parquet_zstd",
+    "table": "lineitem",
+    "rows": 6001215,
+    "checksum": "DA7261A1F4D7C061",
+    "source_checksum": "DA7261A1F4D7C061",
+    "matches": true,
+    "types_match": true,
+    "source_types": {
+      "orderkey": "bigint",
+      "linenumber": "integer",
+      "quantity": "double"
+    },
+    "columns": [
+      [
+        "orderkey",
+        "bigint",
+        "",
+        ""
+      ],
+      [
+        "linenumber",
+        "integer",
+        "",
+        ""
+      ],
+      [
+        "quantity",
+        "double",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "variant": "orc_snappy",
+    "table": "lineitem",
+    "rows": 6001215,
+    "checksum": "DA7261A1F4D7C061",
+    "source_checksum": "DA7261A1F4D7C061",
+    "matches": true,
+    "types_match": true,
+    "source_types": {
+      "orderkey": "bigint",
+      "linenumber": "integer",
+      "quantity": "double"
+    },
+    "columns": [
+      [
+        "orderkey",
+        "bigint",
+        "",
+        ""
+      ],
+      [
+        "linenumber",
+        "integer",
+        "",
+        ""
+      ],
+      [
+        "quantity",
+        "double",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "variant": "orc_zstd",
+    "table": "lineitem",
+    "rows": 6001215,
+    "checksum": "DA7261A1F4D7C061",
+    "source_checksum": "DA7261A1F4D7C061",
+    "matches": true,
+    "types_match": true,
+    "source_types": {
+      "orderkey": "bigint",
+      "linenumber": "integer",
+      "quantity": "double"
+    },
+    "columns": [
+      [
+        "orderkey",
+        "bigint",
+        "",
+        ""
+      ],
+      [
+        "linenumber",
+        "integer",
+        "",
+        ""
+      ],
+      [
+        "quantity",
+        "double",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "variant": "smallfiles",
+    "table": "lineitem",
+    "rows": 6001215,
+    "checksum": "DA7261A1F4D7C061",
+    "source_checksum": "DA7261A1F4D7C061",
+    "matches": true,
+    "types_match": true,
+    "source_types": {
+      "orderkey": "bigint",
+      "linenumber": "integer",
+      "quantity": "double"
+    },
+    "columns": [
+      [
+        "orderkey",
+        "bigint",
+        "",
+        ""
+      ],
+      [
+        "linenumber",
+        "integer",
+        "",
+        ""
+      ],
+      [
+        "quantity",
+        "double",
+        "",
+        ""
+      ]
+    ]
+  }
+]

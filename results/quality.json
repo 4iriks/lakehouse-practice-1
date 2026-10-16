@@ -1,0 +1,16 @@
+{
+  "customer": {
+    "null_rows": 0,
+    "duplicate_keys": 0
+  },
+  "orders": {
+    "null_rows": 0,
+    "duplicate_keys": 0
+  },
+  "lineitem": {
+    "null_rows": 0,
+    "duplicate_keys": 0
+  },
+  "orphan_orders": 0,
+  "orphan_lineitems": 0
+}

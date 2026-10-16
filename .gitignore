@@ -1,0 +1,10 @@
+.venv/
+.env
+__pycache__/
+*.pyc
+work/
+results/debug/
+results/spark-warehouse/
+results/metastore_db/
+results/derby.log
+docker/minio/minio-source.tar.gz

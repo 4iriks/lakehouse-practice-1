@@ -1,0 +1,278 @@
+[
+  {
+    "schema": "bronze_parquet_gzip",
+    "table": "customer",
+    "rows": 150000,
+    "active_data_bytes": 618677,
+    "metadata_bytes": 77438,
+    "retained_data_bytes": 0,
+    "data_files": 1,
+    "metadata_files": 5,
+    "files": [
+      [
+        "s3://warehouse/01a14610-5d53-7a61-9384-e3551f97aee2/customer-5192b358aa394715a40a07ee058de1c2/data/20261016_185527_00079_i48p6-1b69bbb7-9413-498a-a088-3a0b936ccf36.parquet",
+        618677,
+        150000,
+        "PARQUET"
+      ]
+    ],
+    "ddl": "CREATE TABLE lake.bronze_parquet_gzip.customer (\n   custkey bigint,\n   name varchar\n)\nWITH (\n   format = 'PARQUET',\n   format_version = 2,\n   location = 's3://warehouse/01a14610-5d53-7a61-9384-e3551f97aee2/customer-5192b358aa394715a40a07ee058de1c2',\n   max_commit_retry = 4\n)",
+    "physical_codecs": [
+      "GZIP"
+    ],
+    "embedded_footer_bytes": 311
+  },
+  {
+    "schema": "bronze_parquet_gzip",
+    "table": "orders",
+    "rows": 1500000,
+    "active_data_bytes": 14102338,
+    "metadata_bytes": 127323,
+    "retained_data_bytes": 0,
+    "data_files": 1,
+    "metadata_files": 5,
+    "files": [
+      [
+        "s3://warehouse/01a14610-5d53-7a61-9384-e3551f97aee2/orders-60dad8d454dd42d0bf0e85d175e4088c/data/20261016_185528_00081_i48p6-eed10151-ce01-4448-b856-5891fe0cfe7a.parquet",
+        14102338,
+        1500000,
+        "PARQUET"
+      ]
+    ],
+    "ddl": "CREATE TABLE lake.bronze_parquet_gzip.orders (\n   orderkey bigint,\n   custkey bigint,\n   orderdate date,\n   totalprice double\n)\nWITH (\n   format = 'PARQUET',\n   format_version = 2,\n   location = 's3://warehouse/01a14610-5d53-7a61-9384-e3551f97aee2/orders-60dad8d454dd42d0bf0e85d175e4088c',\n   max_commit_retry = 4\n)",
+    "physical_codecs": [
+      "GZIP"
+    ],
+    "embedded_footer_bytes": 575
+  },
+  {
+    "schema": "bronze_parquet_gzip",
+    "table": "lineitem",
+    "rows": 6001215,
+    "active_data_bytes": 8877478,
+    "metadata_bytes": 45398,
+    "retained_data_bytes": 0,
+    "data_files": 1,
+    "metadata_files": 5,
+    "files": [
+      [
+        "s3://warehouse/01a14610-5d53-7a61-9384-e3551f97aee2/lineitem-a731a72a2a1141b58f19c76762f8b3af/data/20261016_185531_00083_i48p6-9e6a0644-def9-4bb7-94ee-2c6e3726ee8d.parquet",
+        8877478,
+        6001215,
+        "PARQUET"
+      ]
+    ],
+    "ddl": "CREATE TABLE lake.bronze_parquet_gzip.lineitem (\n   orderkey bigint,\n   linenumber integer,\n   quantity double\n)\nWITH (\n   format = 'PARQUET',\n   format_version = 2,\n   location = 's3://warehouse/01a14610-5d53-7a61-9384-e3551f97aee2/lineitem-a731a72a2a1141b58f19c76762f8b3af',\n   max_commit_retry = 4\n)",
+    "physical_codecs": [
+      "GZIP"
+    ],
+    "embedded_footer_bytes": 473
+  },
+  {
+    "schema": "bronze_parquet_zstd",
+    "table": "customer",
+    "rows": 150000,
+    "active_data_bytes": 258489,
+    "metadata_bytes": 77436,
+    "retained_data_bytes": 0,
+    "data_files": 1,
+    "metadata_files": 5,
+    "files": [
+      [
+        "s3://warehouse/01a14610-9ae2-77c1-b334-6627ad76fa58/customer-5532101d02234d6b8ca4b3071dcdb0e0/data/20261016_185536_00086_i48p6-413055ae-de35-4515-a3f9-d84f0dbc4f72.parquet",
+        258489,
+        150000,
+        "PARQUET"
+      ]
+    ],
+    "ddl": "CREATE TABLE lake.bronze_parquet_zstd.customer (\n   custkey bigint,\n   name varchar\n)\nWITH (\n   format = 'PARQUET',\n   format_version = 2,\n   location = 's3://warehouse/01a14610-9ae2-77c1-b334-6627ad76fa58/customer-5532101d02234d6b8ca4b3071dcdb0e0',\n   max_commit_retry = 4\n)",
+    "physical_codecs": [
+      "ZSTD"
+    ],
+    "embedded_footer_bytes": 311
+  },
+  {
+    "schema": "bronze_parquet_zstd",
+    "table": "orders",
+    "rows": 1500000,
+    "active_data_bytes": 13510672,
+    "metadata_bytes": 127164,
+    "retained_data_bytes": 0,
+    "data_files": 1,
+    "metadata_files": 5,
+    "files": [
+      [
+        "s3://warehouse/01a14610-9ae2-77c1-b334-6627ad76fa58/orders-fbe40d50d44c45db839293789583b000/data/20261016_185536_00088_i48p6-2005440a-228a-4fbb-b925-ecceb9327490.parquet",
+        13510672,
+        1500000,
+        "PARQUET"
+      ]
+    ],
+    "ddl": "CREATE TABLE lake.bronze_parquet_zstd.orders (\n   orderkey bigint,\n   custkey bigint,\n   orderdate date,\n   totalprice double\n)\nWITH (\n   format = 'PARQUET',\n   format_version = 2,\n   location = 's3://warehouse/01a14610-9ae2-77c1-b334-6627ad76fa58/orders-fbe40d50d44c45db839293789583b000',\n   max_commit_retry = 4\n)",
+    "physical_codecs": [
+      "ZSTD"
+    ],
+    "embedded_footer_bytes": 575
+  },
+  {
+    "schema": "bronze_parquet_zstd",
+    "table": "lineitem",
+    "rows": 6001215,
+    "active_data_bytes": 8082142,
+    "metadata_bytes": 45333,
+    "retained_data_bytes": 0,
+    "data_files": 1,
+    "metadata_files": 5,
+    "files": [
+      [
+        "s3://warehouse/01a14610-9ae2-77c1-b334-6627ad76fa58/lineitem-5ad9d6ddd9794f74868b6db9a6a8ec2b/data/20261016_185538_00090_i48p6-cd0627bf-f3db-48d8-a9e6-3d53f78874da.parquet",
+        8082142,
+        6001215,
+        "PARQUET"
+      ]
+    ],
+    "ddl": "CREATE TABLE lake.bronze_parquet_zstd.lineitem (\n   orderkey bigint,\n   linenumber integer,\n   quantity double\n)\nWITH (\n   format = 'PARQUET',\n   format_version = 2,\n   location = 's3://warehouse/01a14610-9ae2-77c1-b334-6627ad76fa58/lineitem-5ad9d6ddd9794f74868b6db9a6a8ec2b',\n   max_commit_retry = 4\n)",
+    "physical_codecs": [
+      "ZSTD"
+    ],
+    "embedded_footer_bytes": 473
+  },
+  {
+    "schema": "bronze_orc_snappy",
+    "table": "customer",
+    "rows": 150000,
+    "active_data_bytes": 747777,
+    "metadata_bytes": 77239,
+    "retained_data_bytes": 0,
+    "data_files": 1,
+    "metadata_files": 5,
+    "files": [
+      [
+        "s3://warehouse/01a14610-bdb3-78a3-a55e-c2cbf187019e/customer-ded039ce84c8495aa8a0fb74fb3c5145/data/20261016_185515_00065_i48p6-1e26c74e-b6d5-40ad-8790-544b13dcb626.orc",
+        747777,
+        150000,
+        "ORC"
+      ]
+    ],
+    "ddl": "CREATE TABLE lake.bronze_orc_snappy.customer (\n   custkey bigint,\n   name varchar\n)\nWITH (\n   format = 'ORC',\n   format_version = 2,\n   location = 's3://warehouse/01a14610-bdb3-78a3-a55e-c2cbf187019e/customer-ded039ce84c8495aa8a0fb74fb3c5145',\n   max_commit_retry = 4\n)",
+    "physical_codecs": [
+      "SNAPPY"
+    ],
+    "embedded_footer_bytes": 358
+  },
+  {
+    "schema": "bronze_orc_snappy",
+    "table": "orders",
+    "rows": 1500000,
+    "active_data_bytes": 16443169,
+    "metadata_bytes": 127194,
+    "retained_data_bytes": 0,
+    "data_files": 1,
+    "metadata_files": 5,
+    "files": [
+      [
+        "s3://warehouse/01a14610-bdb3-78a3-a55e-c2cbf187019e/orders-a9ebfc0489f54a7d8d82d13849eb27ad/data/20261016_185516_00067_i48p6-38b6038e-c4c6-4318-aad3-24dc2396a5a0.orc",
+        16443169,
+        1500000,
+        "ORC"
+      ]
+    ],
+    "ddl": "CREATE TABLE lake.bronze_orc_snappy.orders (\n   orderkey bigint,\n   custkey bigint,\n   orderdate date,\n   totalprice double\n)\nWITH (\n   format = 'ORC',\n   format_version = 2,\n   location = 's3://warehouse/01a14610-bdb3-78a3-a55e-c2cbf187019e/orders-a9ebfc0489f54a7d8d82d13849eb27ad',\n   max_commit_retry = 4\n)",
+    "physical_codecs": [
+      "SNAPPY"
+    ],
+    "embedded_footer_bytes": 441
+  },
+  {
+    "schema": "bronze_orc_snappy",
+    "table": "lineitem",
+    "rows": 6001215,
+    "active_data_bytes": 20197005,
+    "metadata_bytes": 45406,
+    "retained_data_bytes": 0,
+    "data_files": 1,
+    "metadata_files": 5,
+    "files": [
+      [
+        "s3://warehouse/01a14610-bdb3-78a3-a55e-c2cbf187019e/lineitem-b9e27522766841b89d42b9338808515d/data/20261016_185517_00069_i48p6-61795066-aa1c-4a5f-8937-ee99da7d94eb.orc",
+        20197005,
+        6001215,
+        "ORC"
+      ]
+    ],
+    "ddl": "CREATE TABLE lake.bronze_orc_snappy.lineitem (\n   orderkey bigint,\n   linenumber integer,\n   quantity double\n)\nWITH (\n   format = 'ORC',\n   format_version = 2,\n   location = 's3://warehouse/01a14610-bdb3-78a3-a55e-c2cbf187019e/lineitem-b9e27522766841b89d42b9338808515d',\n   max_commit_retry = 4\n)",
+    "physical_codecs": [
+      "SNAPPY"
+    ],
+    "embedded_footer_bytes": 407
+  },
+  {
+    "schema": "bronze_orc_zstd",
+    "table": "customer",
+    "rows": 150000,
+    "active_data_bytes": 86784,
+    "metadata_bytes": 77234,
+    "retained_data_bytes": 0,
+    "data_files": 1,
+    "metadata_files": 5,
+    "files": [
+      [
+        "s3://warehouse/01a14610-da03-72c2-88cc-2dbad5f2edd3/customer-0cdf4707ef314a61968b965ebbc67413/data/20261016_185521_00072_i48p6-d46beb3f-565d-431a-bd92-fa61f8d0fbd6.orc",
+        86784,
+        150000,
+        "ORC"
+      ]
+    ],
+    "ddl": "CREATE TABLE lake.bronze_orc_zstd.customer (\n   custkey bigint,\n   name varchar\n)\nWITH (\n   format = 'ORC',\n   format_version = 2,\n   location = 's3://warehouse/01a14610-da03-72c2-88cc-2dbad5f2edd3/customer-0cdf4707ef314a61968b965ebbc67413',\n   max_commit_retry = 4\n)",
+    "physical_codecs": [
+      "ZSTD"
+    ],
+    "embedded_footer_bytes": 362
+  },
+  {
+    "schema": "bronze_orc_zstd",
+    "table": "orders",
+    "rows": 1500000,
+    "active_data_bytes": 12587163,
+    "metadata_bytes": 127186,
+    "retained_data_bytes": 0,
+    "data_files": 1,
+    "metadata_files": 5,
+    "files": [
+      [
+        "s3://warehouse/01a14610-da03-72c2-88cc-2dbad5f2edd3/orders-65aa70c3d826466caf514f0584ee31b2/data/20261016_185522_00074_i48p6-d8aaba0d-7918-4863-86b4-8c5fb2daefd7.orc",
+        12587163,
+        1500000,
+        "ORC"
+      ]
+    ],
+    "ddl": "CREATE TABLE lake.bronze_orc_zstd.orders (\n   orderkey bigint,\n   custkey bigint,\n   orderdate date,\n   totalprice double\n)\nWITH (\n   format = 'ORC',\n   format_version = 2,\n   location = 's3://warehouse/01a14610-da03-72c2-88cc-2dbad5f2edd3/orders-65aa70c3d826466caf514f0584ee31b2',\n   max_commit_retry = 4\n)",
+    "physical_codecs": [
+      "ZSTD"
+    ],
+    "embedded_footer_bytes": 437
+  },
+  {
+    "schema": "bronze_orc_zstd",
+    "table": "lineitem",
+    "rows": 6001215,
+    "active_data_bytes": 14168644,
+    "metadata_bytes": 45343,
+    "retained_data_bytes": 0,
+    "data_files": 1,
+    "metadata_files": 5,
+    "files": [
+      [
+        "s3://warehouse/01a14610-da03-72c2-88cc-2dbad5f2edd3/lineitem-a5ec6c17c43f46aba1f1370fe9ed5992/data/20261016_185523_00076_i48p6-8bf8c141-b448-463c-9cf9-39c37af6ab06.orc",
+        14168644,
+        6001215,
+        "ORC"
+      ]
+    ],
+    "ddl": "CREATE TABLE lake.bronze_orc_zstd.lineitem (\n   orderkey bigint,\n   linenumber integer,\n   quantity double\n)\nWITH (\n   format = 'ORC',\n   format_version = 2,\n   location = 's3://warehouse/01a14610-da03-72c2-88cc-2dbad5f2edd3/lineitem-a5ec6c17c43f46aba1f1370fe9ed5992',\n   max_commit_retry = 4\n)",
+    "physical_codecs": [
+      "ZSTD"
+    ],
+    "embedded_footer_bytes": 393
+  }
+]

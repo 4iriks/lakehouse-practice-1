@@ -1,0 +1,9 @@
+{
+  "ServerVersion": "29.1.2",
+  "OSType": "linux",
+  "Architecture": "x86_64",
+  "NCPU": 12,
+  "MemTotal": 8183918592,
+  "OperatingSystem": "Docker Desktop (containerized)",
+  "KernelVersion": "6.18.54.1-microsoft-standard-WSL2"
+}
