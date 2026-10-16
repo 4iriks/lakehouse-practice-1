@@ -75,12 +75,3 @@ docker compose stop
 | [results](results) | Исходные измерения, проверки и результат Gold |
 
 Данные TPC-H, Docker-тома, виртуальное окружение и скачанные архивы в Git не включаются. CDC, Airflow/SCD и лабораторная №2 с 22 запросами относятся к отдельным занятиям.
-
-## Источники
-
-- Материалы задания: `вариант.xlsx` (строка 44), `варианты.md` (вариант 3), `отчет.md` (форма).
-- [Trino: TPC-H connector](https://trino.io/docs/current/connector/tpch.html).
-- [Trino: Iceberg connector](https://trino.io/docs/current/connector/iceberg.html).
-- [Apache Iceberg: Spark](https://iceberg.apache.org/docs/1.9.2/spark-getting-started/).
-- [Lakekeeper: пример развёртывания версии 0.9.5](https://github.com/lakekeeper/lakekeeper/tree/v0.9.5/examples/minimal).
-- [MinIO: исходный релиз](https://github.com/minio/minio/tree/RELEASE.2025-09-07T16-13-09Z).
